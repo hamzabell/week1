@@ -10,6 +10,10 @@
     "snarkjs": "^0.4.16"
   },
   "scripts": {
+    "compile": "sudo sh scripts/compile-HelloWorld.sh",
+    "compile-plonk": "chmod a+x scripts/compile-Multiplier3-plonk.sh &&  sh scripts/compile-Multiplier3-plonk.sh",
+    "compile-groth": "chmod a+x scripts/compile-Multiplier3-groth16.sh &&  sh scripts/compile-Multiplier3-groth16.sh",
+    "bump-solidity": "node scripts/bump-solidity.js",
     "test": "node scripts/bump-solidity.js && npx hardhat test"
   }
 }
