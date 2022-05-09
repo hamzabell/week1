@@ -49,7 +49,7 @@ template  sudoku() {
     for (var i=0; i<9; i++) {
         for (var j=0; j<9; j++) {
             assert(puzzleProof[i][j].out == 1); //[assignment] change assert() to use your created RangeProof instead
-            
+            assert(solutionProof[i][j].out == 1);
             mul.a[i][j] <== puzzle[i][j];
             mul.b[i][j] <== solution[i][j];
         }
